@@ -141,7 +141,6 @@ function formcontato() { //formcontrato no se encuentra en el HTML esta al final
             errorNombre.textContent = '';
             errorMensaje.textContent = '';
             document.getElementById('btnEnviarMsj').removeAttribute('disabled');
-            console.log('cuando todos estan informados')
         } else
             if (Nombre != '' || !ValidarEmail(Email) || Asunto != '' || Mensaje != '') {
             // Si solo un campos no están vacío, desactivar el botón enviar formulario
@@ -173,8 +172,6 @@ function ValidarEmail(email){
     var regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return regex.test(email);
 }
-
-
 
 // Función para enviar el formulario
 function BotonEnviar() {
