@@ -1,9 +1,3 @@
-// Carga la biblioteca emailjs-com
-var emailjsScript = document.createElement('script');
-emailjsScript.src = 'https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js';
-document.head.appendChild(emailjsScript);
-
-
 //Enlace repositorio GITHUB
 function Github() {
     // Abre la página web deseada en una nueva pestaña
@@ -181,34 +175,36 @@ function ValidarEmail(email){
 }
 
 
-// Inicializar emailjs-com con tu usuario y template ID
-emailjs.init('tu_usuario');
 
 // Función para enviar el formulario
-function EnviarFormulario() {
-    let nombre = document.getElementById('nombre').value;
-    let email = document.getElementById('email').value;
-    let asunto = document.getElementById('asunto').value;
-    let mensaje = document.getElementById('mensaje').value;
+function BotonEnviar() {
+    const btn = document.getElementById('btnEnviarMsj');
 
-    if (nombre && email && asunto && mensaje) {
-        // Enviar correo utilizando emailjs-com y Gmail
-        emailjs.send('gmail', 'template_id', {
-            from_name: nombre,
-            from_email: email,
-            subject: asunto,
-            message: mensaje
-        }).then(
-            function(response) {
-                console.log("Correo enviado correctamente", response);
-                alert("Correo enviado correctamente");
-            },
-            function(error) {
-                console.error("Error al enviar el correo", error);
-                alert("Error al enviar el correo");
-            }
-        );
-    } else {
-        alert("Por favor, completa todos los campos del formulario.");
-    }
+    document.getElementById('form')
+     .addEventListener('submit', function(event) {
+       event.preventDefault();
+    
+       btn.textContent = 'Enviando...'; // CON TEXTCONTENT SE CAMBIA EL TEXTO DEL BOTON
+    
+       const serviceID = 'service_t676q0r';
+       const templateID = 'template_rc9y8lg';
+    
+       emailjs.sendForm(serviceID, templateID, 'form', "THrTszgk4tCm636CJ")
+        .then(() => {
+          LimbiarCajas();
+          btn.textContent = 'Enviar mensaje'; // CON TEXTCONTENT SE CAMBIA EL TEXTO DEL BOTON
+        }, (err) => {
+          btn.textContent = 'Enviar mensaje'; // CON TEXTCONTENT SE CAMBIA EL TEXTO DEL BOTON
+          alert(JSON.stringify(err));
+        });
+    });
+}
+
+// SE LIMPIAN LAS CAJAS DE TEXTO INPUT
+function LimbiarCajas() {
+    document.getElementById('nombre').value = '';
+    document.getElementById('email').value  = '';
+    document.getElementById('asunto').value  = '';
+    document.getElementById('mensaje').value  = '';
+    alert('Mensaje enviado con exito');
 }
