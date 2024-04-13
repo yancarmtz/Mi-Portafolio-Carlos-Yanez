@@ -132,6 +132,7 @@ function formcontato() { //formcontrato no se encuentra en el HTML esta al final
     if (Nombre === '' && !ValidarEmail(Email) && Asunto === '' && Mensaje === '') {
         // Si todos los campos están vacíos, desactivar el botón enviar formulario
         document.getElementById('btnEnviarMsj').setAttribute('disabled', 'true');
+        console.log('cuando todos estan vacios');
     } else 
         if (Nombre != '' && !!ValidarEmail(Email) && Asunto != '' && Mensaje != '') {
             //EL BOTON ENVIAR FORMULARIO QUEDA ACTIVADO
@@ -140,14 +141,17 @@ function formcontato() { //formcontrato no se encuentra en el HTML esta al final
             errorNombre.textContent = '';
             errorMensaje.textContent = '';
             document.getElementById('btnEnviarMsj').removeAttribute('disabled');
+            console.log('cuando todos estan informados')
         } else
             if (Nombre != '' || !ValidarEmail(Email) || Asunto != '' || Mensaje != '') {
             // Si solo un campos no están vacío, desactivar el botón enviar formulario
             document.getElementById('btnEnviarMsj').setAttribute('disabled', 'true');
+            console.log('entra donde alguno esta informado');
             } else 
                 // En otros casos, mantener el estado del botón según las validaciones individuales
                 // Valida que los campos no esten vacios
                 if (val == 0){
+                    console.log(`val: ${val}`);
                     //EL BOTON ENVIAR FORMULARIO QUEDA ACTIVADO
                     document.getElementById('btnEnviarMsj').removeAttribute('disabled');
                 //El boton enviar formulario se activa
@@ -169,6 +173,8 @@ function ValidarEmail(email){
     var regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return regex.test(email);
 }
+
+
 
 // Función para enviar el formulario
 function BotonEnviar() {
