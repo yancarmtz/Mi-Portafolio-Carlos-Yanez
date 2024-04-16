@@ -1,3 +1,5 @@
+//MENU PRINCIPAL
+
 //Enlace repositorio GITHUB
 function Github() {
     // Abre la página web deseada en una nueva pestaña
@@ -36,6 +38,9 @@ function DemoJuegSecret() {
 }
 
 
+
+//AQUI SE EMPIEZA A VALIDAR EL FORMULARIO DE CONTACTO
+
 function formcontato() { //formcontrato no se encuentra en el HTML esta al final en la instruccion addeventlistener   
      //Obtener los valores de los campos del formulario
     let Nombre = (document.getElementById('nombre').value);
@@ -49,6 +54,13 @@ function formcontato() { //formcontrato no se encuentra en el HTML esta al final
     val = 0;
 
 
+    //BLUR: JavaScript está utilizando la función addEventListener para agregar un evento a un elemento en tu página web. 
+    //En este caso, el evento es blur, que se activa cuando el usuario hace clic fuera de un campo de entrada, como un campo de correo electrónico con el id email.
+    //Cuando se dispara el evento blur en el campo de correo electrónico, se ejecuta la función anónima (sin nombre) que le sigue. Esta función puede 
+    //contener código para realizar acciones específicas en respuesta a que el usuario haya dejado de enfocar ese campo de entrada. Por ejemplo, 
+    //podrías validar el correo electrónico ingresado, mostrar un mensaje de error si no es válido, o realizar cualquier otra acción que desees en ese momento.
+    //En resumen, esa línea de código permite detectar cuando el usuario deja de enfocar el campo de correo electrónico en la página web y ejecutar
+    //acciones en respuesta a ese evento.
 
     // Valida el campo Nombre
     while (true) { 
@@ -70,7 +82,18 @@ function formcontato() { //formcontrato no se encuentra en el HTML esta al final
     
     
 
-    // Validar el campo Email
+    
+
+    
+    //BLUR: JavaScript está utilizando la función addEventListener para agregar un evento a un elemento en tu página web. 
+    //En este caso, el evento es blur, que se activa cuando el usuario hace clic fuera de un campo de entrada, como un campo de correo electrónico con el id email.
+    //Cuando se dispara el evento blur en el campo de correo electrónico, se ejecuta la función anónima (sin nombre) que le sigue. Esta función puede 
+    //contener código para realizar acciones específicas en respuesta a que el usuario haya dejado de enfocar ese campo de entrada. Por ejemplo, 
+    //podrías validar el correo electrónico ingresado, mostrar un mensaje de error si no es válido, o realizar cualquier otra acción que desees en ese momento.
+    //En resumen, esa línea de código permite detectar cuando el usuario deja de enfocar el campo de correo electrónico en la página web y ejecutar
+    //acciones en respuesta a ese evento.
+
+    // Valida el campo Email
     document.getElementById('email').addEventListener('blur', function() { // blur es cuando se sale del campo de texto
         while (true) {
             if (Email === '') {
@@ -88,6 +111,14 @@ function formcontato() { //formcontrato no se encuentra en el HTML esta al final
         }
     });
 
+
+    //BLUR: JavaScript está utilizando la función addEventListener para agregar un evento a un elemento en tu página web. 
+    //En este caso, el evento es blur, que se activa cuando el usuario hace clic fuera de un campo de entrada, como un campo de correo electrónico con el id email.
+    //Cuando se dispara el evento blur en el campo de correo electrónico, se ejecuta la función anónima (sin nombre) que le sigue. Esta función puede 
+    //contener código para realizar acciones específicas en respuesta a que el usuario haya dejado de enfocar ese campo de entrada. Por ejemplo, 
+    //podrías validar el correo electrónico ingresado, mostrar un mensaje de error si no es válido, o realizar cualquier otra acción que desees en ese momento.
+    //En resumen, esa línea de código permite detectar cuando el usuario deja de enfocar el campo de correo electrónico en la página web y ejecutar
+    //acciones en respuesta a ese evento.
 
     // Valida el campo Asunto
     document.getElementById('asunto').addEventListener('blur', function() { // blur es cuando se sale del campo de texto
@@ -108,6 +139,14 @@ function formcontato() { //formcontrato no se encuentra en el HTML esta al final
         }
     });
 
+
+    //BLUR: JavaScript está utilizando la función addEventListener para agregar un evento a un elemento en tu página web. 
+    //En este caso, el evento es blur, que se activa cuando el usuario hace clic fuera de un campo de entrada, como un campo de correo electrónico con el id email.
+    //Cuando se dispara el evento blur en el campo de correo electrónico, se ejecuta la función anónima (sin nombre) que le sigue. Esta función puede 
+    //contener código para realizar acciones específicas en respuesta a que el usuario haya dejado de enfocar ese campo de entrada. Por ejemplo, 
+    //podrías validar el correo electrónico ingresado, mostrar un mensaje de error si no es válido, o realizar cualquier otra acción que desees en ese momento.
+    //En resumen, esa línea de código permite detectar cuando el usuario deja de enfocar el campo de correo electrónico en la página web y ejecutar
+    //acciones en respuesta a ese evento.
 
     // Valida el campo Mensaje
     document.getElementById('mensaje').addEventListener('blur', function() { // blur es cuando se sale del campo de texto

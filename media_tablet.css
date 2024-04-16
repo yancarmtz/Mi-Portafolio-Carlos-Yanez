@@ -1,0 +1,518 @@
+/* Vamos a desafiarnos trabajando con responsividad?
+Utiliza las referencias de los breakpoints @media abajo */
+/*************************************************************/
+/*Tablet*/
+@media screen and (max-width: 1024px) {
+
+
+    html{
+        overflow-y: auto; /* Si el problema es que el contenedor tiene un tamaño fijo y el contenido es más grande, 
+                             puedes ajustar el overflow para que no genere una barra de desplazamiento adicional  */
+    }
+
+    /*Sección Menu*/
+
+    section.menu{
+        position: relative;
+        padding-right: 45%;
+    }
+
+
+    /*Header*/
+    .menu__header{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-left: 5%;
+    }
+
+
+    .menu__header img{
+        margin-right: 5px;
+        height: 20px;
+        width: 25px;
+        
+    }
+
+
+    /*Opciones del menu ocultas*/
+    .menu__list__item:nth-child(1),
+    .menu__list__item:nth-child(2),
+    .menu__list__item:nth-child(3),
+    .menu__list__item:nth-child(4),
+    .menu__list__item:nth-child(5){
+        display: none; /*Con esto se oculta todos los elementos */ ;
+    }
+
+    .menu__list__item{
+        position: relative;
+        padding-left: 174%;
+    }
+
+
+
+
+
+    /*Sección Title*/
+
+    section.title{
+       padding-right: 20%;
+        
+    }
+
+    .title__div{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+    }
+
+    /*IMAGEN FOTO PERFIL*/
+    .title__profile{
+        width: 146px;
+        height: 146px;
+        position: relative;
+        left: 96%;
+    }
+
+    .title__container{
+        right: 38%;
+    }
+
+    .title__bio{
+        font-size: 20px;
+        width: 121%;
+        padding-bottom: 1%;
+    }
+
+    .title__subsection{
+        font-size: 16px;
+        font-weight: lighter;
+        width: 123%;
+    }
+
+    .title__network{
+        left: 2%;
+    }
+
+    .title__network__item{
+        position:  relative;
+        left: 16%;
+    }
+
+    .title__network__item:hover{
+        font-weight: bold;
+        text-decoration: underline;
+        font-size: large;
+    }
+
+    .title__network__item a {
+        display: flex;
+        flex-direction: row;
+    }
+
+
+
+    /*Sección About*/
+
+    section.about{
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        height: auto;
+        width: auto;  
+    }
+
+    .about__container img{
+        padding-left: 4%;
+        padding-bottom: 3%;
+        
+    }
+
+    /*SOBRE MI */
+    .about__title{
+        display: flex;
+        justify-content:left;
+        font-family: sans-serif;
+        padding-top: 1%;
+        padding-left: 4%;
+    }
+
+    .about__paragraph{
+        display: flex;
+        flex-direction: column;
+        font-family: sans-serif;
+        font-size: 16px;
+        align-items: center;
+        padding-left: 4%;
+        width: 97%;   
+    }
+
+
+    /*Seccion skills*/
+
+    section.skills{
+        position: relative;
+        padding-top: 26px;
+    }
+
+    /* ICONOS SKILLS */
+    .skills__line{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
+
+    .skills__box:nth-child(1),
+    .skills__box:nth-child(2),
+    .skills__box:nth-child(3){
+        left: 20%;    
+        width: 224px;
+        height: 118px;
+    }
+
+    .skills__box:nth-child(4),
+    .skills__box:nth-child(5){
+        width: 224px;
+        height: 118px;
+        top: 166px;
+        right: 30%;
+    }
+
+
+    .skills__box{
+        position: relative;
+        background-color: #ffffff;
+        border: #f5f5f5 solid 10px;
+        width: 176px;
+        height: 174px;
+    }
+
+
+    .skills__box ul{
+        gap: 15px;
+        right: 15px;
+        top: 83px;
+    }
+
+    .skills__box ul:nth-child(1),
+    .skills__box ul:nth-child(2),
+    .skills__box ul:nth-child(3){
+        gap: 15px;
+        right: 28px;
+        top: 14px;
+    }
+
+    .skills__box img{
+        width: 32px;
+        height: 37px;
+    }
+
+
+
+    /*Sección Hobbies*/
+
+    section.hobbies{
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        flex-direction: column;
+        padding-top: 190px;
+    }
+
+    .hobbies__line{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .hobbies__box{
+        position: relative;
+        background-color: #ffffff;
+        border: #f5f5f5 solid 10px;
+        width: 176px;
+        height: 174px;
+    }
+
+    .hobbies__box:nth-child(1),
+    .hobbies__box:nth-child(2){
+        left: 25%;    
+        width: 224px;
+        height: 118px;
+    }
+
+    .hobbies__box:nth-child(3),
+    .hobbies__box:nth-child(4){
+        width: 224px;
+        height: 118px;
+        top: 166px;
+        right: 25%;
+    }
+
+    .hobbies__box ul{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        right: 15px;
+        top: 83px;
+    }
+
+    .hobbies__box ul:nth-child(1),
+    .hobbies__box ul:nth-child(2){
+        gap: 15px;
+        right: 28px;
+        top: 14px;
+    }
+
+    .hobbies__box img{
+        width: 32px;
+        height: 37px;
+    }
+
+
+
+
+    /* Experiencia Académica*/
+
+    section.academic{
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        top: 201px;   
+        background-color: #EAF2FD;
+        padding-bottom: 80px;
+    }
+
+    .academic__courses{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .academic__courses__box{
+        position: relative;
+        background-color: #ffffff;
+        border: #EAF2FD solid 10px;
+        border-block-color:  #e6effb;
+        width: 368px;
+        height: 286px;
+    }
+
+    .academic__courses__box:nth-child(1),
+    .academic__courses__box:nth-child(2),
+    .academic__courses__box:nth-child(3){
+        left: 0;    
+        width: 224px;
+        height: 118px;
+    }
+
+
+   
+    .academic__courses__list{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        font-family: sans-serif;
+        font-size: 22px;
+        margin: 0; 
+        padding: 0;
+    }
+
+    .academic__courses__list:nth-child(1),
+    .academic__courses__list:nth-child(2),
+    .academic__courses__list:nth-child(3){
+        gap: 15px;
+        right: 28px;
+        top: 14px;
+    }
+
+    .academic__courses__list img{
+        position: relative;
+        padding: 11px 87px;
+        width: 102px;
+        height: 60px;
+    }
+
+    .academic__courses__item__title{
+        position: relative;
+        top: -61px;
+        left: 27px;
+        font-size: 16px;
+    }
+
+    .academic__courses__item__subtitle{
+        position: relative;
+        font-size: 14px;
+        top: -76px;
+        left: 27px;
+    }
+
+
+
+    /* experiencia*/
+
+    section.experience{
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        flex-direction: column;
+        padding-top: 238px;
+    }
+
+    .experiencie__box__2{
+        position: relative;
+        top: 20%;
+    }
+
+    .experience__img__1,
+    .experience__img__2 {
+        width: 704px;
+        height: 320px;
+    }
+
+    .experience__img__1{
+        position: relative;
+        left: 0;
+    }
+
+    .experience__img__2{
+        top: 62px;
+        position: relative;
+        left: 0;
+    }
+
+    .experience__info__1{
+        position: relative;
+        top: -5px;
+        right: 0;
+    }
+
+    .experience__info__1 h2, 
+    .experience__info__2 h2{
+        width: 61%;
+        font-family: sans-serif;
+        font-size: 22px;
+    }
+
+    .experience__info__2{
+        position: relative;
+        top: 62px;
+        right: 0%;
+    }
+
+    .experience__info__1 h3, 
+    .experience__info__2 h3{
+        width: 51%;
+        font-family: sans-serif;
+        font-weight: lighter;
+        font-size: 16px;
+    }
+
+
+    .experience__description button{
+        width: 108px;
+        height: 40px;
+    }
+
+    .experience__description button:hover{
+        background-color: #3f33e7
+
+    }
+
+    .experiencia__botao--repo{
+        border: #2A7AE4  solid 1px;
+        color: #2A7AE4;
+
+    }
+
+    .experience__botao--demo{
+        background-color: #2A7AE4;
+        border: none;
+        color: #FFFFFF;
+    }
+
+
+
+
+    /*Contacto*/
+
+    section.formcontato{
+        height: 88%;
+        position: relative;
+        top: 122px;
+        padding-bottom: 5px;
+    }
+
+    .formcontato--esquerda{
+        display: none;
+    }
+
+    .formcontato__text{
+        position: relative;
+        top: 6px;
+    }
+
+    .formcontato__form{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap:15px;
+        margin: 0 0 20px;
+        padding: 10px 13px;
+        width: 50%;
+    }
+
+    .formcontato__title{
+        position: relative; 
+        right: -2%;
+        font-family: sans-serif;
+        font-size: 32px;
+    }
+
+    .formcontato__subtext{
+        position: relative; 
+        right: -2%;
+        font-family: sans-serif;
+        font-size: 14px;
+        font-weight: lighter;
+    }
+
+    .formcontato__input{
+        width: 704px;
+        height: 30px;
+    }
+
+    .formcontato__textarea{
+        width: 704px;
+        height: 133px;
+    }
+
+    .formcontato__form button{
+        background-color: #2A7AE4;
+        border: none;
+        color: #FFFFFF;
+        width: 144px;
+        height: 51px;
+    }
+
+    .formcontato__form button:hover{
+        background-color: #3f33e7
+    }
+
+
+
+    /*footeer*/
+
+    section.footer{
+        position: relative;
+        top: 208px;
+    }
+}
+
