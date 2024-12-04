@@ -67,7 +67,7 @@
         height: 98px;
         position: relative;
         left: 5%;
-        top: -90%;
+        top: -71%;
     }
 
     .title__container{
@@ -158,42 +158,65 @@
         padding-top: 26px;
     }
 
+    .skills__title{
+        em {
+            display: none;
+        }
+    }
+
     /* ICONOS SKILLS */
     .skills__line{
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: row;
+        flex-direction: column;
     }
 
 
     .skills__box:nth-child(1),
     .skills__box:nth-child(2){
-        left: 30%;    
-        width: 156px;
-        height: 118px;
+        left: -25px;    
+        width: 318px;
+        height: 200px;
+        top: -1px;
     }
 
     .skills__box:nth-child(3){
-        width: 156px;
-        height: 118px;
-        top: 166px;
-        left: -10%;
+        width: 318px;
+        height: 200px;
+        top: 3px;
+        left: -25px;
     }
 
     .skills__box:nth-child(4){
-        width: 156px;
-        height: 118px;
-        top: 166px;
-        right: 10%;
+        width: 318px;
+        height: 200px;
+        top: 8px;
+        left: -25px;
     }
 
     .skills__box:nth-child(5){
-        width: 156px;
-        height: 118px;
-        top: 325px;
-        right: 40%;
+        width: 318px;
+        height: 200px;
+        top: 26px;
+        left: -25px;
     }
+
+    .skills__box:nth-child(6){
+        width: 318px;
+        height: 200px;
+        top: 42px;
+        left: -25px;
+    }
+
+    .skills__box:nth-child(7){
+        width: 318px;
+        height: 200px;
+        top: 55px;
+        left: -25px;
+    }
+
+
 
 
     .skills__box{
@@ -211,17 +234,86 @@
         top: 83px;
     }
 
-    .skills__box ul:nth-child(1),
-    .skills__box ul:nth-child(2),
-{
-        gap: 15px;
-        right: 28px;
-        top: 14px;
-    }
-
     .skills__box img{
         width: 32px;
         height: 37px;
+    }
+
+    .skills__Descripcion{
+        display: flex;
+        position: relative;
+        justify-content: center;
+        top: 17px;
+        padding-bottom: 5rem;
+        font-size: 18px;
+    } 
+    
+    
+    .skills_ImgName{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        top: -10px;
+    }
+    
+    .skills_ImgName li:hover{
+        font-size: 17px;
+    }
+    
+    .skills__name{
+        font-weight: bold;
+        font-size: 19px;
+    }
+    
+    .skills__Descripcion_1{
+        display: flex;
+        position: relative;
+        justify-content: center;
+        top: 10px;
+        font-size: 17px;
+        padding-bottom: 3rem;
+    }
+    
+    .skills_ImgName_1{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        top: -10px;
+    }
+    
+    .skills_ImgName_1 li:hover{
+        font-size: 16px;
+    }
+    
+    .skills__Descripcion_2{
+        display: flex;
+        position: relative;
+        justify-content: center;
+        top: 13px;
+        font-size: 18px;
+        padding-bottom: 3rem;
+    }
+    
+    .skills_ImgName_2{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        top: -6px;
+    }
+    
+    .skills_ImgName_2 li:hover{
+        font-size: 17px;
+    }
+    
+    .skills_ImgName_3{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        top: -7px;
+    }
+    
+    .skills_ImgName_3 li:hover{
+        font-size: 16px;
     }
 
 
@@ -233,7 +325,7 @@
         justify-content: center; 
         align-items: center;
         flex-direction: column;
-        padding-top: 343px;
+        padding-top: 76px;
     }
 
     .hobbies__line{
@@ -376,15 +468,86 @@
     }
 
 
+    /*Experiencia profesional*/
 
-    /* experiencia*/
+    .section__timeline{
+        top: 92px;
+        position: relative;
+        padding-bottom: 136px;
+        left: -29%;
+       }
+
+       #Experience_Prof {
+        left: 33%;
+    }
+       
+    
+      /* Punto en la línea */
+      .timeline__item {
+        position: relative;
+        margin-bottom: 40px; /* Espacio entre puntos */
+        width: 291px;
+      }
+    
+      .timeline__item::before {
+        content: '';
+        position: absolute;
+        left: -60px; /* Centra el punto respecto a la línea */
+        top: 0;
+        width: 30px;
+        height: 16px;
+        background-color: #1f1715; /* Color del punto */
+        border-radius: 50%; /* Hace el punto circular */
+        border: 2px solid #fff; /* Borde blanco */
+        z-index: 1;
+        
+      }
+    
+    /* Contenedor de la línea de tiempo */
+      .timeline{
+        border-left: 6px solid rgb(17, 26, 17);
+        min-height: 100%; /* Altura de la línea */
+        position: relative;
+        left: 16%;
+        top: 123px;
+        margin: 20px 0;
+        padding-left: 40px;
+      }
+
+      .timeline__text{
+        width: 285px;
+      }
+    
+      .timeline__text2{
+       em {
+        display: flex;
+        width: 317px;
+        position: relative;
+        left: -165px;
+       }
+      }
+
+
+
+    /* experiencia curso alura*/
 
     section.experience{
         display: flex;
         justify-content: center; 
         align-items: center;
         flex-direction: column;
-        padding-top: 233px;
+        padding-top: 91px;
+    }
+
+    .experience__section__title{
+        text-align: center;
+        font-size: 21px;
+    }
+
+
+    .experiencie__box__1{
+        position: relative;
+        top: 20px;
     }
 
     .experiencie__box__2{
@@ -392,8 +555,26 @@
         top: 20%;
     }
 
+    .experiencie__box__3{
+        position: relative;
+        top: 114px;
+    }
+
+    .experiencie__box__4{
+        position: relative;
+        top: 100px;
+    }
+
+    .experiencie__box__5{
+        position: relative;
+        top: 212px;
+    }
+
     .experience__img__1,
-    .experience__img__2 {
+    .experience__img__2,
+    .experience__img__3,
+    .experience__img__4,
+    .experience__img__5 {
         width: 296px;
         height: 144px;
     }
@@ -409,32 +590,79 @@
         left: 0;
     }
 
-    .experience__info__1{
-    position: relative;
-    top: -5px;
-    right: 0;
+    .experience__img__3{
+        top: -1px;
+        position: relative;
+        left: 2px;
     }
 
+    .experience__img__4{
+        top: 62px;
+        position: relative;
+        left: 0;
+    }
+
+    .experience__img__5{
+        top: .5px;
+        position: relative;
+        left: 0;
+    }
+
+    .experience__info__1{
+        position: relative;
+        top: -5px;
+        right: 0;
+    }
+
+    .experience__info__2{
+        position: relative;
+        top: 62px;
+        right: 0%;
+    }
+
+    .experience__info__3{
+        position: relative;
+        top: -1px;
+        right: 1px;
+        padding-left: 1px;
+    }
+
+
+    .experience__info__4{
+        position: relative;
+        top: 62px;
+        right: 0%;
+    }
+
+    .experience__info__5{
+        position: relative;
+        top: -5px;
+        right: 0;
+    }
+
+
     .experience__info__1 h2, 
-    .experience__info__2 h2{
+    .experience__info__2 h2,
+    .experience__info__3 h2,
+    .experience__info__4 h2,
+    .experience__info__5 h2{
     width: 61%;
     font-family: sans-serif;
     font-size: 16px;
     }
 
-    .experience__info__2{
-    position: relative;
-    top: 62px;
-    right: 0%;
-    }
+   
 
     .experience__info__1 h3, 
-    .experience__info__2 h3{
-    width: 51%;
+    .experience__info__2 h3,
+    .experience__info__3 h3,
+    .experience__info__4 h3,
+    .experience__info__5 h3{
+    width: 307px;
     font-family: sans-serif;
     font-weight: lighter;
-    font-size: 14px;
-    white-space: nowrap;
+    font-size: 16px;
+    /*white-space: nowrap;*/
     }
 
 
@@ -468,7 +696,7 @@
     section.formcontato{
         height: 88%;
         position: relative;
-        top: 122px;
+        top: 262px;
         padding-bottom: 5px;
     }
 
@@ -522,7 +750,7 @@
     }
 
     .formcontato__form button{
-        left: 6%;
+        left: -18%;
         position: relative;
         background-color: #2A7AE4;
         border: none;
@@ -541,6 +769,6 @@
 
     section.footer{
         position: relative;
-        top: 208px;
+        top: 331px;
     }
 }

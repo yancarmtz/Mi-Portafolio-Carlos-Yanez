@@ -5,7 +5,7 @@ section.experience{
     justify-content: center; 
     align-items: center;
     flex-direction: column;
-    padding-top: 115px;
+    padding-top: 12px;
 }
 
 .experiencie__box__2{
@@ -14,8 +14,25 @@ section.experience{
 
 }
 
+.experience__section__title{
+    font-size: 30px;
+}
+
+#Experience_Prof {
+    position: relative;
+    top: 111px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center; 
+    left: 20px;
+
+}
+
 .experience__img__1,
-.experience__img__2 {
+.experience__img__2, 
+.experience__img__3,
+.experience__img__4,
+.experience__img__5{
     width: 752px;
     height: 406px;
 }
@@ -30,29 +47,69 @@ section.experience{
     left: 13%;
 }
 
+.experience__img__3{
+    position: relative;
+    left: -26%;
+}
+
+.experience__img__4{
+    position: relative;
+    left: 13%;
+}
+
+.experience__img__5{
+    position: relative;
+    left: -26%;
+}
+
 .experience__info__1{
    position: relative;
    top: -285px;
    right: -77%;
 }
 
+.experience__info__2{
+    position: relative;
+    top: -285px;
+    right: 26%;
+    width: 87%;
+ }
+
+ .experience__info__3{
+    position: relative;
+    top: -285px;
+    right: -77%;
+ }
+
+ .experience__info__4{
+    position: relative;
+    top: -285px;
+    right: 26%;
+    width: 87%;
+ }
+
+ .experience__info__5{
+    position: relative;
+    top: -285px;
+    right: -77%;
+ }
+
 .experience__info__1 h2, 
-.experience__info__2 h2{
+.experience__info__2 h2,
+.experience__info__3 h2,
+.experience__info__4 h2,
+.experience__info__5 h2{
    width: 51%;
    font-family: sans-serif;
    font-size: 22px;
 }
 
-.experience__info__2{
-   position: relative;
-   top: -285px;
-   right: 26%;
-   width: 87%;
-}
-
 .experience__info__1 h3, 
-.experience__info__2 h3{
-   width: 51%;
+.experience__info__2 h3,
+.experience__info__3 h3,
+.experience__info__4 h3,
+.experience__info__5 h3{
+   width: 43%;
    font-family: sans-serif;
    font-weight: lighter;
    font-size: 16px;

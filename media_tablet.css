@@ -64,7 +64,7 @@ Utiliza las referencias de los breakpoints @media abajo */
         display: flex;
         flex-direction: row;
         align-items: center;
-        width: 100%;
+        width: 85%;
     }
 
     /*IMAGEN FOTO PERFIL*/
@@ -72,7 +72,7 @@ Utiliza las referencias de los breakpoints @media abajo */
         width: 146px;
         height: 146px;
         position: relative;
-        left: 96%;
+        left: 102%;
     }
 
     .title__container{
@@ -124,7 +124,7 @@ Utiliza las referencias de los breakpoints @media abajo */
     }
 
     .about__container img{
-        padding-left: 4%;
+        padding-left: 5%;
         padding-bottom: 3%;
         
     }
@@ -135,7 +135,7 @@ Utiliza las referencias de los breakpoints @media abajo */
         justify-content:left;
         font-family: sans-serif;
         padding-top: 1%;
-        padding-left: 4%;
+        padding-left: 8%;
     }
 
     .about__paragraph{
@@ -144,8 +144,8 @@ Utiliza las referencias de los breakpoints @media abajo */
         font-family: sans-serif;
         font-size: 16px;
         align-items: center;
-        padding-left: 4%;
-        width: 97%;   
+        padding-left: 8%;
+        width: 81%;   
     }
 
 
@@ -156,28 +156,47 @@ Utiliza las referencias de los breakpoints @media abajo */
         padding-top: 26px;
     }
 
+    .skills__title{
+        em {
+            display: none;
+        }
+    }
+
     /* ICONOS SKILLS */
     .skills__line{
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: row;
+        left: 28px;
+        position: relative;
+
     }
 
 
-    .skills__box:nth-child(1),
+    .skills__box:nth-child(1){
+        left: 41%;    
+        width: 224px;
+        height: 158px;
+        top: -5px
+        
+    }
+
     .skills__box:nth-child(2),
-    .skills__box:nth-child(3){
-        left: 20%;    
+    .skills__box:nth-child(3),
+    .skills__box:nth-child(4){
+        left: 13%;    
         width: 224px;
-        height: 118px;
+        height: 158px;
+        top: 183px;
     }
 
-    .skills__box:nth-child(4),
-    .skills__box:nth-child(5){
+    .skills__box:nth-child(5),
+    .skills__box:nth-child(6),
+    .skills__box:nth-child(7){
         width: 224px;
-        height: 118px;
-        top: 166px;
+        height: 186px;
+        top: 383px;
         right: 30%;
     }
 
@@ -199,11 +218,89 @@ Utiliza las referencias de los breakpoints @media abajo */
 
     .skills__box ul:nth-child(1),
     .skills__box ul:nth-child(2),
-    .skills__box ul:nth-child(3){
+    .skills__box ul:nth-child(3),
+    .skills__box ul:nth-child(4){
         gap: 15px;
         right: 28px;
         top: 14px;
     }
+
+    .skills__Descripcion{
+        display: flex;
+        position: relative;
+        justify-content: center;
+        top: 5px;
+        padding-bottom: 5rem;
+        font-size: 14px;
+    } 
+    
+    
+    .skills_ImgName{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        top: -6px;
+    }
+    
+    .skills_ImgName li:hover{
+        font-size: 17px;
+    }
+    
+    .skills__name{
+        font-weight: bold;
+    }
+    
+    .skills__Descripcion_1{
+        display: flex;
+        position: relative;
+        justify-content: center;
+        top: 1px;
+        font-size: 14px;
+        padding-bottom: 3rem;
+    }
+    
+    .skills_ImgName_1{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        top: -10px;
+    }
+    
+    .skills_ImgName_1 li:hover{
+        font-size: 16px;
+    }
+    
+    .skills__Descripcion_2{
+        display: flex;
+        position: relative;
+        justify-content: center;
+        top: 1px;
+        font-size: 14px;
+        padding-bottom: 3rem;
+    }
+    
+    .skills_ImgName_2{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        top: -10px;
+    }
+    
+    .skills_ImgName_2 li:hover{
+        font-size: 17px;
+    }
+    
+    .skills_ImgName_3{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        top: -10px;
+    }
+    
+    .skills_ImgName_3 li:hover{
+        font-size: 16px;
+    }
+    
 
     .skills__box img{
         width: 32px;
@@ -219,7 +316,7 @@ Utiliza las referencias de los breakpoints @media abajo */
         justify-content: center; 
         align-items: center;
         flex-direction: column;
-        padding-top: 190px;
+        padding-top: 399px;
     }
 
     .hobbies__line{
@@ -286,7 +383,7 @@ Utiliza las referencias de los breakpoints @media abajo */
         position: relative;
         top: 201px;   
         background-color: #EAF2FD;
-        padding-bottom: 80px;
+        padding-bottom: 109px;
     }
 
     .academic__courses{
@@ -356,6 +453,67 @@ Utiliza las referencias de los breakpoints @media abajo */
 
 
 
+ /*Experiencia profesional*/
+
+ .section__timeline{
+    top: 92px;
+    position: relative;
+    padding-bottom: 136px;
+    left: -13%;
+   }
+
+   #Experience_Prof {
+    left: 14%;
+}
+   
+
+  /* Punto en la línea */
+  .timeline__item {
+    position: relative;
+    margin-bottom: 40px; /* Espacio entre puntos */
+    width: 291px;
+  }
+
+  .timeline__item::before {
+    content: '';
+    position: absolute;
+    left: -60px; /* Centra el punto respecto a la línea */
+    top: 0;
+    width: 30px;
+    height: 16px;
+    background-color: #1f1715; /* Color del punto */
+    border-radius: 50%; /* Hace el punto circular */
+    border: 2px solid #fff; /* Borde blanco */
+    z-index: 1;
+    
+  }
+
+/* Contenedor de la línea de tiempo */
+  .timeline{
+    border-left: 6px solid rgb(17, 26, 17);
+    min-height: 100%; /* Altura de la línea */
+    position: relative;
+    left: 16%;
+    top: 123px;
+    margin: 20px 0;
+    padding-left: 40px;
+  }
+
+  .timeline__text{
+    width: 388px;
+  }
+
+  .timeline__text2{
+   em {
+    display: flex;
+    width: 317px;
+    position: relative;
+    left: -165px;
+   }
+  }
+
+
+
     /* experiencia*/
 
     section.experience{
@@ -363,7 +521,7 @@ Utiliza las referencias de los breakpoints @media abajo */
         justify-content: center; 
         align-items: center;
         flex-direction: column;
-        padding-top: 238px;
+        padding-top: 88px;
     }
 
     .experiencie__box__2{
@@ -372,7 +530,10 @@ Utiliza las referencias de los breakpoints @media abajo */
     }
 
     .experience__img__1,
-    .experience__img__2 {
+    .experience__img__2,
+    .experience__img__3,
+    .experience__img__4,
+    .experience__img__5 {
         width: 704px;
         height: 320px;
     }
@@ -387,18 +548,30 @@ Utiliza las referencias de los breakpoints @media abajo */
         position: relative;
         left: 0;
     }
+    
+    .experience__img__3{
+        top:123px;
+        position: relative;
+        left: 0;
+    }
+    
+    .experience__img__4{
+        top:180px;
+        position: relative;
+        left: 0;
+    }
+
+    .experience__img__5{
+        top:246px;
+        position: relative;
+        left: 0;
+    }
+
 
     .experience__info__1{
         position: relative;
         top: -5px;
         right: 0;
-    }
-
-    .experience__info__1 h2, 
-    .experience__info__2 h2{
-        width: 61%;
-        font-family: sans-serif;
-        font-size: 22px;
     }
 
     .experience__info__2{
@@ -407,13 +580,47 @@ Utiliza las referencias de los breakpoints @media abajo */
         right: 0%;
     }
 
+    .experience__info__3{
+        position: relative;
+        top: 120px;
+        right: 0;
+    }
+
+    .experience__info__4{
+        position: relative;
+        top: 179px;
+        right: 0%;
+    }
+
+    .experience__info__5{
+        position: relative;
+        top: 247px;
+        right: 0;
+    }
+
+
+    .experience__info__1 h2, 
+    .experience__info__2 h2,
+    .experience__info__3 h2,
+    .experience__info__4 h2,
+    .experience__info__5 h2{
+        width: 61%;
+        font-family: sans-serif;
+        font-size: 22px;
+    }
+
+   
     .experience__info__1 h3, 
-    .experience__info__2 h3{
-        width: 51%;
+    .experience__info__2 h3,
+    .experience__info__3 h3,
+    .experience__info__4 h3,
+    .experience__info__5 h3{
+        width: 80%;
         font-family: sans-serif;
         font-weight: lighter;
         font-size: 16px;
     }
+
 
 
     .experience__description button{
@@ -446,7 +653,7 @@ Utiliza las referencias de los breakpoints @media abajo */
     section.formcontato{
         height: 88%;
         position: relative;
-        top: 122px;
+        top: 299px;
         padding-bottom: 5px;
     }
 
@@ -500,6 +707,7 @@ Utiliza las referencias de los breakpoints @media abajo */
         color: #FFFFFF;
         width: 144px;
         height: 51px;
+        margin-left: 76%;
     }
 
     .formcontato__form button:hover{
@@ -512,7 +720,7 @@ Utiliza las referencias de los breakpoints @media abajo */
 
     section.footer{
         position: relative;
-        top: 208px;
+        top: 375px;
     }
 }
 

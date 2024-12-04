@@ -9,7 +9,7 @@ function Github() {
 //Enlace repositorio LINKEDIN
 function linkedin() {
     // Abre la página web deseada en una nueva pestaña
-    window.open('https://www.linkedin.com/in/carlos-ya%C3%B1ez-mtz/', '_blank');
+    window.open('https://www.linkedin.com/in/carlosya%C3%B1ezmtz/', '_blank');
 }
 
 //Enlace repositorio CURRICULUM
@@ -36,6 +36,35 @@ function RepoJuegSecret() {
 function DemoJuegSecret() {
     window.open('https://yancarmtz.github.io/juego-secreto/', '_blank');
 }
+
+//BOTONES PAGINA TEMPORIZADOR ***********************************************************
+function RepoTempo() {
+    window.open('https://github.com/yancarmtz/temporizador', '_blank');
+}
+
+function DemoTempo() {
+    window.open('https://yancarmtz.github.io/temporizador/', '_blank');
+}
+
+//BOTONES PAGINA GENERADOR DE CONTRASEÑAS ************************************************
+function RepoGenerContras() {
+    window.open('https://github.com/yancarmtz/AluraGeneradorContrase-a', '_blank');
+}
+
+function DemoGenerContras() {
+    window.open('https://yancarmtz.github.io/AluraGeneradorContrase-a/', '_blank');
+}
+
+//BOTONES PAGINA GENERADOR DE CONTRASEÑAS ************************************************
+function RepoEcommAlurageek() {
+    window.open('https://github.com/yancarmtz/Ecommerce-Alurageek/tree/main', '_blank');
+}
+
+function DemoEcommAlurageek() {
+    window.open('https://ecommerce-alurageek-c8q9fj2tq-yancarmtzs-projects.vercel.app/', '_blank');
+}
+
+
 
 
 
@@ -78,11 +107,6 @@ function formcontato() { //formcontrato no se encuentra en el HTML esta al final
             break; // Salir del bucle
         }
     }
-
-    
-    
-
-    
 
     
     //BLUR: JavaScript está utilizando la función addEventListener para agregar un evento a un elemento en tu página web. 
