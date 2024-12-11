@@ -1,7 +1,15 @@
 /*************************************************************/
 /*Mobile*/
 @media screen and  (max-width: 767px) {
+    body {
+      margin: 0;
+      padding: 0;
+    }
 
+   .tudo {
+      width: 100%;
+   } 
+ 
  /*Sección Menu*/
 
     section.menu{
