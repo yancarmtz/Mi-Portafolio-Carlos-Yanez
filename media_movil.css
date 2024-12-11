@@ -2,15 +2,18 @@
 /*Mobile*/
 @media screen and  (max-width: 767px) {
     body {
-      margin: 0;
-      padding: 0;
+        font-size: 16px;
+        padding: 10px;
     }
-
-   .tudo {
-      width: 100%;
-   } 
- 
- /*Sección Menu*/
+    
+    .contenedor {
+        width: 100%;
+        margin: 0;
+    }
+    
+    .header {
+        text-align: center;
+    } 
 
     section.menu{
         padding-left: 2%;
