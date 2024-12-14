@@ -7,9 +7,10 @@
      }
 
  /*Sección Menu*/
+
     section.menu{
         padding-left: 2%;
-        padding-right: 40%;
+        padding-right: 98%;
     }
 
 
@@ -22,6 +23,8 @@
         margin-right: 12px;
         height: 20px;
         width: 25px;
+        position: relative;
+        left: 2vw;
     }
 
     .menu__title{
@@ -42,7 +45,7 @@
 
     .menu__list__item{
         position: relative;
-        padding-left: 97%;
+        padding-left: 96%;
         font-size: 15px;
         font-weight: lighter;
     }
@@ -59,8 +62,8 @@
     }
 
     .title__div{
-       
         width: 100%;
+        position: relative;
         top: 20%;
     }
 
@@ -74,12 +77,12 @@
     }
 
     .title__container{
-        right: 38%;
+        right: 42%;
     }
 
     .title__bio{
         font-size: 22px;
-        width: 123%;
+        width: 118%;
         padding-bottom: 3%;
         margin: 1% 1%;
         left: 77px;
@@ -532,7 +535,7 @@
       .timeline__text2{
        em {
         display: flex;
-        width: 317px;
+        width: 287px;
         position: relative;
         left: -165px;
        }
@@ -749,14 +752,14 @@
     .formcontato__input{
         left: 6%;
         position: relative;
-        width: 351px;
+        width: 302px;
         height: 40px;
     }
 
     .formcontato__textarea{
         position: relative;
         left: 6%;
-        width: 351px;
+        width: 302px;
         height: 133px;
     }
 
@@ -773,7 +776,6 @@
     .formcontato__form button:hover{
         background-color: #3f33e7
     }
-
 
     /*footeer*/
 
