@@ -40,9 +40,9 @@ section.title{
 
 .title__subsection{
     font-family: sans-serif;
-    /*font-weight: normal;*/
+    font-weight: bold;
     font-size: 20px;
-    margin: 1 25%;
+    margin: 0 25%;
     width: 45%;
 }
 
