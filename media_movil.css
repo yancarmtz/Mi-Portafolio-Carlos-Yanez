@@ -77,7 +77,7 @@
     }
 
     .title__container{
-        right: 34%;
+        right: 36%;
     }
 
     .title__bio{
@@ -169,7 +169,7 @@
         font-family: sans-serif;
         font-size: 16px;
         align-items: center;
-        padding-left: 7%;
+        padding-left: 10%;
         width: 86%;   
     }
     
