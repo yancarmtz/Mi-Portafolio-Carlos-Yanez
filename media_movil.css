@@ -138,7 +138,7 @@
     }
 
     .about__container img{
-        padding-left: 6%;
+        padding-left: 3%;
         padding-bottom: 3%;
         
     }
@@ -161,6 +161,44 @@
         padding-left: 6%;
         width: 90%;   
     }
+
+    .about__paragraph1{
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        font-family: sans-serif;
+        font-size: 16px;
+        align-items: center;
+        padding-left: 7%;
+        width: 86%;   
+    }
+    
+    .about__paragraph2{
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        font-family: sans-serif;
+        font-size: 16px;
+        align-items: center;
+        padding-left: 6%;
+        width: 86%;   
+    }
+    
+   
+.about__paragraph3{
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    font-size: 16px;
+    align-items: center;
+    padding-left: 25%;
+    width: 51%;   
+}
+
+.about__paragraph3 a{
+    color: blue;
+}
 
 
     /*Seccion skills*/
