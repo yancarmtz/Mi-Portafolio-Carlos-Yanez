@@ -57,6 +57,7 @@ Utiliza las referencias de los breakpoints @media abajo */
 
     section.title{
        padding-right: 20%;
+       margin-left: -3%;
         
     }
 
@@ -146,6 +147,28 @@ Utiliza las referencias de los breakpoints @media abajo */
         align-items: center;
         padding-left: 8%;
         width: 81%;   
+    }
+
+    .about__paragraph1{
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        font-family: sans-serif;
+        font-size: 16px;
+        align-items: center;
+        margin-left: -5%;
+        width: 51%;   
+    }
+
+    .about__paragraph2{
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        font-family: sans-serif;
+        font-size: 16px;
+        align-items: center;
+        padding-left: 18%;
+        width: 65%;   
     }
 
 
