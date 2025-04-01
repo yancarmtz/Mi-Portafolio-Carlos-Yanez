@@ -1,460 +1,58 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Referencia de la hoja de estilo de Css -->
-    <link rel="stylesheet" href="body.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Fonte del Proyecto Raleway -->
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
-    <title> Mi Portafolio profesional - Carlos Yañez</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/flexbox.css">
+    <title>Mis Videos - Carlos Yañez Martinez</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-    <!-- Sección del Menú  -->
-    <div class="tudo">
-    <section class="menu">
-        <header class="menu__header">
-            <img src="assets\vector.png">
-            <h3 class="menu__title">Carlos Yañez Martinez</h3>
-        </header>
+    <!-- Cabecera -->
+    <header>
 
-        <nav>
-            <ul class="menu__list">
-                <li class="menu__list__item"><a href="#sobre-mi">Sobre mi</a></li>
-                <li class="menu__list__item"><a href="#skills">Skills</a></li>
-                <li class="menu__list__item"><a href="#hobbies">Hobbies</a></li>
-                <li class="menu__list__item"><a href="#formacion">Formación</a></li>
-                <li class="menu__list__item"><a href="#xp">Proyectos</a></li>
-                <li class="menu__list__item"><a href="#contacto"><strong>yancarmtz@gmail.com</strong></a></li>
-            </ul>
-           
+       
+        <nav class="cabecera__container">
+
+            <h1 class="logo__item" href="#"></h1>
+
+            <div>
+                <h3 class="cabecera__texto">Los videos creados algunos son del 2021 del negocio de nutriditas, mi negocio crece
+                                              y otros del 2025</h3>
+            </div>
+
+            <div class="cabecera__iconos__item">
+                <h3 class="cabecera__texto">Hola, soy Carlos Yañez Martinez, mi linkedln da click en mi foto</h3>
+                <a href="https://www.linkedin.com/in/carlosyanezmtz/" class="cabecera__avatar" title="Carlos Yañez Martinez - Linkedln" target="_blank"></a>
+            </div>
+
         </nav>
-    </section>
 
-    <!-- Sección del Header/Title/Hero -->
-    <section class="title">
-        <div class="title__div">
-            <img class="title__profile" src="assets\Foto Carlos Yañez Martinez.png">
-            
-            <div class="title__container">
-                <h2 class="title__bio">Hola, mi nombre es Carlos Yañez Martinez.</h2>
-                <h3 class="title__subsection">Participe en el proyecto Oracle ONE en Alura Latam, aprendiendo javascript, css, html y MYSQL,
-                    anteriormente estuve como Tester, mi primer experiencia laboral fue como Dev Cobol.
-                    Busco transicionar hacia roles donde pueda aplicar mis habilidades técnicas en proyectos innovadores y en áreas distintas al desarrollo
-                    en COBOL o el de QA Tester COBOL, explorando nuevas tecnologías y procesos. Estoy interesado en un entorno laboral que fomente el 
-                    aprendizaje continuo y el equilibrio entre vida personal y profesional.</h3>
-                <p></p>
-                <h3 class="title__subsection"><em><strong>Para ver mas informacion o descargar mi CV dale clic a las siguientes opciones:</strong></em></h3>
-                <ul class="title__network">
-                     <!-- Pon los enlaces de tus redes sociales favoritas -->
-                    <li class="title__network__item"><a href="" onclick="Github();">Github <img src="assets\arrow.png"> </a></li>
-                    <li class="title__network__item"><a href="" onclick="linkedin();">Linkedin <img src="assets\arrow.png"></a></li>
-                    <li class="title__network__item"><a href="" onclick="Currículo();">Currículo <img src="assets\arrow.png"></a></li>
-                </ul>
-            </div>
-
-        </div>
-    </section>
-    
-    <!-- Sección sobre mi -->
-    <section class="about" id="sobre-mi">
-        <div class="about__container">
-            <h3 class="about__title">Sobre mi</h3>
-            <p class="about__paragraph">Soy licenciado en informática, inicie como becario de cobol aprendí batch y cics, estuve en varias fabricas de software, empecé 
-                                        con el cliente bancomer y al final con santander, después estuve como tester para banorte en una fábrica de software 
-                                        vi cobol batch y pruebas web de sus aplicaciones de banorte.</p>
-            <p class="about__paragraph">Mas de 9 años de desarrollador cobol y 1 año 4 meses como tester de software web y unos meses en cobol en un proyecto para buscar archivos de entrada para ejecutar procesos (JCL'S),
-                                        tome un curso en la institucion Oracle ONE en Alura Latam aprendiendo un poco sobre javascript, css, html, SQL en MYSQL aun sigo aprendiendo
-                                        ya que es un mundo donde se esta en continuo aprendisaje.</p>
-            <p class="about__paragraph1">Habilidades Adicionales e Interés Creativo:</p>
-            <p class="about__paragraph">
-                Paralelamente a mi experiencia técnica, poseo un fuerte interés en la creación de contenido digital. Estuve algunos meses del 2020 y 2021 como freelance en la producción de contenido digital para negocios locales. Actualmente, en febrero del 2025, continúo con la creación de videos para negocios locales, utilizando herramientas como CapCut y Filmora para crear videos promocionales. Desarrollo contenido audiovisual que incluye edición, adición de voces con IA, subtítulos, música de fondo, transiciones, manejo de ChatGPT, Google AI Studio y Claude para la creación de guiones para videos. Con Google AI Studio, reviso los videos creados y obtengo mejoras o cambios en el contenido, lo que me ayuda a aprender y mejorar continuamente.
-            </p>
-            <p class="about__paragraph2">
-                Comparto la liga de algunos videos creados para negocios locales:  
-            </p>
-            <p class="about__paragraph3">
-                <a href="https://videos-negocios-locales.vercel.app/" target="_blank">Ver videos</a>
-            </p>
-            
-            <!-- Si quieres, pon tú firma acá! -->
-            <img src="assets\signature.png">
-        </div>
-    </section>
-
-    <!-- Sección de Skills -->
-    <section class="skills" id="skills">
-        <h3 class="skills__title">Skills <em>(Para ampliar usa el cursor sobre el texto)</em></h3>
-            <div class="skills__line">
-                <div class="skills__box">
-                    <ul>
-                        <div class="skills_ImgName">
-                            <li class="skills__img"><img src="assets\cobol.png"></li>
-                            <li class="skills__name"> Developer Cobol</li> 
-                            <li class="skills__Descripcion">Batch (JCL´S, CONTROLM, DB2(Base de datos)) y CICS (Creacion de transacciones).</li> 
-                        </div>
-                                        
-                       
-                    </ul>
-                </div>
-
-                <div class="skills__box">
-                    <ul>
-                        <div class="skills_ImgName">
-                            <li class="skills__img"><img src="assets\htlm.png"></li>
-                            <li class="skills__name"> HTML 5</li>
-                            <li class="skills__Descripcion">Uso de Visual Studio Code para generar el codigo html, 
-                                                            conocimientos adquiridos del curso de Oracle ONE en Alura Latam.</li>  
-                        </div>
-                       
-                    </ul>
-                </div>
-
-                <div class="skills__box">
-                    <ul>
-                        <div class="skills_ImgName">
-                            <li class="skills__img"> <img src="assets\js_icon.png" alt=""></li>
-                            <li class="skills__name">Javascript</li>
-                            <li class="skills__Descripcion">Uso de Visual Studio Code para generar el codigo javascript, 
-                                conocimientos adquiridos del curso de Oracle ONE en Alura Latam.</li>
-                        </div>
-                        
-                    </ul>
-                </div>
-
-                <div class="skills__box">
-                    <ul>
-                        <div class="skills_ImgName">
-                            <li class="skills__img"> <img src="assets\css_icon.png" alt=""> </li>
-                            <li class="skills__name">CSS</li>
-                            <li class="skills__Descripcion">Uso de Visual Studio Code para generar el codigo CSS, 
-                                conocimientos adquiridos del curso de Oracle ONE en Alura Latam.</li>
-                        </div>
-                        
-                    </ul>
-                </div>
-
-                <div class="skills__box">
-                    <ul>
-                        <div class="skills_ImgName_1">
-                            <li class="skills__img"> <img src="assets\css_mysql.png" alt=""> </li>
-                            <li class="skills__name">MYSQL</li>
-                            <li class="skills__Descripcion_1">Uso de MYSQL para la creacion, borrado de bases de datos, insert, update, delete, etc,
-                                                conocimientos en Oracle ONE en Alura Latam, ademas de tener conocimiento de DB2 en cobol.</li>
-                        </div>
-                        
-                    </ul>
-                </div>
-
-                <div class="skills__box">
-                    <ul>
-                        <div class="skills_ImgName_2">
-                            <li class="skills__img"> <img src="assets\css_tester.png" alt=""> </li>
-                            <li class="skills__name">QA TESTER</li>
-                            <li class="skills__Descripcion_2">Tester web probando software web del banco banorte y proyecto pequeño cobol usando JCL'S, 
-                                                              busqueda de archivos de entrada.</li>
-                        </div>
-                        
-                    </ul>
-                </div>
-
-                <div class="skills__box">
-                    <ul>
-                        <div class="skills_ImgName_3">
-                            <li class="skills__img"> <img src="assets\css_chatgpt.png" alt=""> </li>
-                            <li class="skills__name">CHATGPT</li>
-                            <li class="skills__Descripcion">Uso de la herramienta de IA para consultas sobre codigo de programacion, bases de datos, etc, 
-                                                            generacion de prompt curso de Oracle ONE en Alura Latam.</li>
-                        </div>
-                        
-                    </ul>
-                </div>
-
-                
-            </div>
-    </section>
-
-    <!-- Sección de Hobbies -->
-    <section class="hobbies" id="hobbies">
-        <h3 class="hobbies__title">Hobbies</h3>
-            <div class="hobbies__line">
-                <div class="hobbies__box">
-                    <ul>
-                        <li class="hobbies__img"> <img src="assets\headphones_icon.png" alt=""></li>
-                        <li class="hobbies__name">Oir música</li>
-                    </ul>
-                </div>
-
-                <div class="hobbies__box">
-                    <ul>
-                        <li class="hobbies__img"><img src="assets\tv_icon.png" alt=""></li>
-                        <li class="hobbies__name">Ver series y documentales</li>
-                    </ul>
-                </div>
-
-                <div class="hobbies__box">
-                    <ul>
-                        <li class="hobbies__img"> <img src="assets\videojuegos.png" alt=""> </li>
-                        <li class="hobbies__name">Videojuegos</li>
-                    </ul>
-                </div>
-
-                <div class="hobbies__box">
-                    <ul>
-                        <li class="hobbies__img"> <img src="assets\pasear.png" alt=""> </li>
-                        <li class="hobbies__name">Pasear</li>
-                    </ul>
-                </div>
-            </div>
-    </section>
-
-        <!-- Sección de Formación académica -->
-    <section class="academic" id="formacion">
-        <h2 class="academic__title" >Formación académica</h2>
-
-        <div class="academic__courses">
-            <div class="academic__courses__box">
-                <ul class="academic__courses__list">
-                    <!-- Pon el logotipo de la institución de formación -->
-                    <li class="academic__courses__item__img"><img src="assets\tesci.png"></li>
-                    <li class="academic__courses__item__title"><h4>Lic en Informatica</h4></li>
-                    <li class="academic__courses__item__subtitle"><p>2007 - TESCI</p></li>
-                </ul>
-            </div>
-
-            <div class="academic__courses__box">
-                <ul class="academic__courses__list">
-                    <!--Pon el logotipo de la institución de formación -->
-                    <li class="academic__courses__item__img"><img src="assets\alura_logo.png"></li>
-                    <li class="academic__courses__item__title"><h4>Formación Oracle ONE Alura Latam</h4></li>
-                    <li class="academic__courses__item__subtitle"><p>Curso - 2024</p></li>
-                </ul>
-            </div>
-
-            <div class="academic__courses__box">
-                <ul class="academic__courses__list">
-                    <!-- Pon el logotipo de la institución de formación -->
-                    <li class="academic__courses__item__img"><img src="assets\indra.png"></li>
-                    <li class="academic__courses__item__title"><h4>Becario Cobol</h4></li>
-                    <li class="academic__courses__item__subtitle"><p>2008 - INDRA</p></li>
-                </ul>
-            </div>
-
-        </div>
-    </section>
-
-    
-    <section class="section__timeline">
-       <h2 class="experience__section__title" id="Experience_Prof">Experiencia Profesional</h2>
-       <div class="timeline"> 
-            <div class="timeline__item">
-                <p class="timeline__text"><strong>Sept 2021 - May 2023:</strong> QA Tester.</p>
-                <p class="timeline__text"><strong>Empresa:</strong> Capgemini, Aguascalientes - Remoto.</p>
-                <p class="timeline__text2"><em>Trabajé en Banorte realizando pruebas modulares e integrales para aplicaciones web, 
-                generando evidencias y documentación en JIRA y ALM. En COBOL, validé transacciones línea 
-                y conexión a MQ con JCLs. También elaboré estrategias y matrices de pruebas para web, y gestioné releases 
-                y planes de prueba en ALM. En el aplicativo Factor, generé escenarios de interés y solicité archivos TXT
-                 con datos específicos. Maneje los aplicativos Factor, SIAB x Internet y Portal Almacenadora Banorte.</em></p>
-            </div>
-            
-            <div class="timeline__item">
-                <p class="timeline__text"><strong>Abril 2015 - Jun 2019:</strong> Analista de sistemas cobol.</p>
-                <p class="timeline__text"><strong>Empresa:</strong> Everis, Queretaro - Presencial.</p>
-                <p class="timeline__text2"><em>
-                    Trabajé en ISBAN para Santander en los proyectos TRIAD y OPICS, desarrollando y modificando JCLs, 
-                    programas batch y copys. Realicé pruebas con el cliente y documenté casos de uso, casos de prueba 
-                    y pruebas unitarias (FOR-DES-502). Manejo de JCL, CHANGEMAN y CONTROL-M.</em></p>
-            </div>
-            
-            <div class="timeline__item">
-                <p class="timeline__text"><strong>Jun 2013 - Ene 2015:</strong> Analista de sistemas cobol.</p>
-                <p class="timeline__text"><strong>Empresa:</strong> Vector ITC, Queretaro - Presencial.</p>
-                <p class="timeline__text2"><em>
-                    Trabajé en ISBAN para Santander en los proyectos TRIAD y OPICS, desarrollando y modificando JCLs, 
-                    programas batch y copys. Realicé pruebas con el cliente y documenté casos de uso, casos de prueba 
-                    y pruebas unitarias (FOR-DES-502). Manejo de JCL, CHANGEMAN y CONTROL-M.</em></p>
-            </div>
-
-            <div class="timeline__item">
-                <p class="timeline__text"><strong>Feb 2012 - Ene 2013:</strong> Desarrollador cobol.</p>
-                <p class="timeline__text"><strong>Empresa:</strong> Stefanini, Queretaro - Presencial.</p>
-                <p class="timeline__text2"><em>
-                    Trabajé en ISBAN para Santander en proyectos como SUPERMOVIL y CUENTA INMEDIATA, realizando 
-                    desarrollo y modificaciones de programas batch, JCLs y procesos en línea (CICS) para optimización. 
-                    Documenté pruebas unitarias en FOR-DES-502 y colaboré en proyectos como Artículo 61, PAMPA 
-                    y Corresponsales OXXO. Herramientas: Changeman, Control-M, DB2 y COBOL.</em></p>
-            </div>
-
-            <div class="timeline__item">
-                <p class="timeline__text"><strong>Nov 2011 - Ene 2012:</strong> Desarrollador cobol.</p>
-                <p class="timeline__text"><strong>Empresa:</strong> Vision Consulting Factory, Queretaro - Presencial.</p>
-                <p class="timeline__text2"><em>
-                    Trabajé en ISBAN para Santander en proyectos como SUPERMOVIL y CUENTA INMEDIATA, realizando 
-                    desarrollo y modificaciones de programas batch, JCLs y procesos en línea (CICS) para optimización. 
-                    Documenté pruebas unitarias en FOR-DES-502 y colaboré en proyectos como Artículo 61, PAMPA 
-                    y Corresponsales OXXO. Herramientas: Changeman, Control-M, DB2 y COBOL.</em></p>
-            </div>
-
-            <div class="timeline__item">
-                <p class="timeline__text"><strong>Sept 2008 - Oct 2011:</strong> Desarrollador cobol.</p>
-                <p class="timeline__text"><strong>Empresa:</strong> Grupo Devant, Coyoacan cd mx - Presencial.</p>
-                <p class="timeline__text2"><em>
-                    Trabajé en Bancomer en desarrollo y modificación de programas batch y línea, pruebas unitarias, 
-                    documentación. Herramientas: Control-M, Changeman, DB2, COBOL.</em></p>
-            </div>
-
-            <div class="timeline__item">
-                <p class="timeline__text"><strong>Ene 2008 - Abril 2009:</strong> Becario de sistemas de la información.</p>
-                <p class="timeline__text"><strong>Empresa:</strong> Indra, Cuautitlan edo mx - Presencial.</p>
-                <p class="timeline__text2"><em>
-                    Aprendí COBOL batch y algo de CICS. Tras 3 meses, fui asignado a Bancomer para trabajar en el aplicativo 
-                    de medios de pago desarrollando en batch.</em></p>
-            </div>
-
-            <div class="timeline__item">
-                <p class="timeline__text"><strong>Ene 2007 - Dic 2007:</strong> Técnico de soporte a usuarios.</p>
-                <p class="timeline__text"><strong>Empresa:</strong> Mexicana de aviacion, Colonia del valle cd mx - Presencial.</p>
-                <p class="timeline__text2"><em>
-                    Soporte a computadoras de escritorio, cambio de discos duros,respaldo de informacion,instalacion de software, hardware limpieza, 
-                    soporte via remota, limpieza de impresoras, soporte a impresoras de boletos en sitio.</em></p>
-            </div>
-       </div> 
-    </section>
+    </header>
 
 
-    <!-- Sección de Experiencia Profesional/Proyectos-->
-    <section class="experience" id="xp">
-        <h2 class="experience__section__title" >Experiencia Formacion Oracle ONE en Alura Latam</h2>
+    <!-- Vídeos -->
+    <!-- Para que se muestre el contenido de seccion de videos, remueve los simbolos de comentarios que estan en la linea 195 y 374 -->
+    <ul id="videos-list" class="videos__container"></ul> 
 
-        <div class="experiencie__box__1">
-            <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
-            <img class="experience__img__1" src="assets\decod_print.png">
-
-            <div class="experience__info__1">
-                <h2 class="experience__title">Encriptador de texto</h2>
-                <h3 class="experience__text">Challenge Alura Codificador - con HTML, JAVASCRIPT Y CSS</h3>
-                    <div class="experience__description">
-                        <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                            <span class="experience__repo"><a href=""><button onclick="RepoEncript();"  class="experiencia__botao--repo">Repositório</button></a></span>
-                            <span class="experience__demo"><a href=""><button onclick="DemoEncript();" class="experience__botao--demo">Ver demo</button></a></span>
-                    </div>
-            </div>
-
-        </div>  
-
-        <div class="experiencie__box__2">
-            <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
-            <img class="experience__img__2" src="assets\forca_print.png">
-
-            <div class="experience__info__2">
-                <h2 class="experience__title">Juego numero secreto</h2>
-                <h3 class="experience__text">Alura Curso - Solo se agrego codigo JAVASCRIPT</h3>
-                    <div class="experience__description">
-                        <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                            <span class="experience__repo"><a href=""><button onclick="RepoJuegSecret();"  class="experiencia__botao--repo">Repositório</button></a></span>
-                            <span class="experience__demo"><a href=""><button onclick="DemoJuegSecret();" class="experience__botao--demo">Ver demo</button></a></span>
-                    </div>
-            </div>
-        </div>  
-    
-        <div class="experiencie__box__3">
-            <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
-            <img class="experience__img__3" src="assets\temporizador.png">
-
-            <div class="experience__info__3">
-                <h2 class="experience__title">Temporizador</h2>
-                <h3 class="experience__text">Alura curso - HTML, se agregaron algunas cosas en JAVASCRIPT y CSS.</h3>
-                    <div class="experience__description">
-                        <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                            <span class="experience__repo"><a href=""><button onclick="RepoTempo();"  class="experiencia__botao--repo">Repositório</button></a></span>
-                            <span class="experience__demo"><a href=""><button onclick="DemoTempo();" class="experience__botao--demo">Ver demo</button></a></span>
-                    </div>
-            </div>
-        </div>  
-
-        <div class="experiencie__box__4">
-            <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
-            <img class="experience__img__4" src="assets\Generador_contraseñas.png">
-
-            <div class="experience__info__4">
-                <h2 class="experience__title">Generador de contraseñas</h2>
-                <h3 class="experience__text">Alura Curso - Solo se agrego un poco de codigo JAVASCRIPT</h3>
-                    <div class="experience__description">
-                        <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                            <span class="experience__repo"><a href=""><button onclick="RepoGenerContras();"  class="experiencia__botao--repo">Repositório</button></a></span>
-                            <span class="experience__demo"><a href=""><button onclick="DemoGenerContras();" class="experience__botao--demo">Ver demo</button></a></span>
-                    </div>
-            </div>
-        </div>  
-
-        <div class="experiencie__box__5">
-            <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
-            <img class="experience__img__5" src="assets\ecommerce-alurageek.png">
-
-            <div class="experience__info__5">
-                <h2 class="experience__title">Ecommerce Aluragreek</h2>
-                <h3 class="experience__text">Alura curso - se agregaron algunas cosas en HTML, JAVASCRIPT y CSS.</h3>
-                    <div class="experience__description">
-                        <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                            <span class="experience__repo"><a href=""><button onclick="RepoEcommAlurageek();"  class="experiencia__botao--repo">Repositório</button></a></span>
-                            <span class="experience__demo"><a href=""><button onclick="DemoEcommAlurageek();" class="experience__botao--demo">Ver demo</button></a></span>
-                    </div>
-            </div>
-        </div>  
-
-    </section> 
-
-        <!-- Sección de Contacto -->
-        <section class="formcontato" id="contacto">
-            <div  class="formcontato__contacto">
-                <div class="formcontato--esquerda">
-                    <img class="formcontato__img" src="assets\contact_image.png">
-                </div>
-                <div class="formcontato__text">
-                    <h2 class="formcontato__title">Contacto</h2>
-                    <h3 class="formcontato__subtext">¿Quieres contactarme?</h3>
-                    <h3 class="formcontato__subtext">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible. </h3>
-                    <form class="formcontato__form" id="form" name="form">
-                        <input class="formcontato__input" type="text" id="nombre" name="nombre" placeholder="Nombre">
-                        <div id="errorNombre"></div> <!-- Contenedor para el mensaje de error -->
-
-                        <input class="formcontato__input" type="email" id="email" name="email" placeholder="E-mail">
-                        <div id="errorEmail"></div> <!-- Contenedor para el mensaje de error -->
-                        
-                        <input class="formcontato__input" type="text" id="asunto" name="asunto" placeholder="Asunto">
-                        <div id="errorAsunto"></div> <!-- Contenedor para el mensaje de error -->
+     <!-- Paginación -->
+     <div id="pagination" class="pagination"></div>
 
 
-                        <textarea class="formcontato__textarea" rows="5" cols="40" id="mensaje" name="mensaje" placeholder="Mensaje"></textarea>
-                        <div id="errorMensaje"></div> <!-- Contenedor para el mensaje de error -->
-
-                        <button type="submit" onclick="BotonEnviar();" class="formcontato__botao" id="btnEnviarMsj" disabled>Enviar mensaje</button>
-                    </form>
-                </div>
-            </div>
+    <!-- <SECCIÓN rodapié> -->
+    <footer class="rodapie__container">
+        <section>
+            <h2 class="rodapie__titulo">&copy; Carlos Yañez Martinez &#127909; - 2025</h2>
         </section>
+    </footer>
 
-        <!-- Sección de Footer -->
-        <section class="footer">
-            <div class="footer__rodape">
-                <p>Desarrollado por Carlos Yañez Martinez</p>
-                <p>2024</p>
-            </div>
-        </section>
-
-    </div>
-
-<!--EMAILJS PARA ENVIAR CORREO DESDE MI FORMULARIO-->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-<script type="text/javascript">
-    emailjs.init('ygs5sCWy-rwbTz7nG');
-</script>
-
- <!-- Script del documento JavaScript -->
-<script src="validacion.js"></script>
+    <script src="script.js" defer></script>
 </body>
+
 </html>
