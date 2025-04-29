@@ -15,7 +15,7 @@ function linkedin() {
 //Enlace repositorio CURRICULUM
 function Currículo() {
     // Abre la página web deseada en una nueva pestaña
-    window.open('https://drive.google.com/uc?id=1RnypTO4zLrbLqR6zmTwIa-1H3Ux6uhqY&export=download', '_blank');
+    window.open('https://drive.google.com/uc?id=1ytFaHCo-TG9SFmw6DlbRAYIVJSQJeP-w&export=download', '_blank');
 }
 
 //Enlace repositorio VIDEOS NEGOCIOS LOCALES
